@@ -1,0 +1,17 @@
+{
+  "name": "Video",
+  "display": "standalone",
+  "short_name": "Video",
+  "background_color": "#fff",
+  "theme_color": "#2d0",
+  "start_url": "./index.html",
+  "icons": [
+    {
+      "src": "favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "ovr_package_name": "video.scigem.com"
+}

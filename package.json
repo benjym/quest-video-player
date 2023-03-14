@@ -1,0 +1,26 @@
+{
+  "name": "360Video",
+  "version": "0.0.1",
+  "scripts": {
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "build_apk": "./oculus-packaging/ovr-platform-util create-pwa -o 360Video.apk --android-sdk ~/Library/Android/sdk --package-name com.scigem.video --manifest-content-file dist/manifest.webmanifest --apk-template ./oculus-packaging/pwa-template.apk --apk-tool ./oculus-packaging/apktool --keystore ./oculus-packaging/debug.keystore",
+    "deploy": "adb install 360Video.apk"
+  },
+  "dependencies": {
+    "@depasquale/three-immersive-controls": "^0.0.12",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "three": "^0.150.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0",
+    "webpack-webmanifest-loader": "^2.0.2"
+  }
+}
